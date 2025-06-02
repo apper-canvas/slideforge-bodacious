@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  .slide-editor-grid {
+    background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  .content-element {
+    @apply absolute border-2 border-transparent hover:border-primary-400 transition-all duration-200 cursor-move;
+  }
+  
+  .content-element.selected {
+    @apply border-primary-500 shadow-lg;
+  }
+  
+  .content-element.text {
+    @apply p-2 min-w-20 min-h-8;
+  }
+  
+  .content-element.image {
+    @apply min-w-16 min-h-16 bg-surface-100 rounded-lg flex items-center justify-center;
+  }
+  
+  .slide-thumbnail {
+    @apply bg-white rounded-lg shadow-card hover:shadow-slide transition-all duration-200 cursor-pointer border-2 border-transparent;
+  }
+  
+  .slide-thumbnail.active {
+    @apply border-primary-500 shadow-slide;
+  }
+  
+  .toolbar-button {
+    @apply p-2 rounded-lg bg-white hover:bg-surface-50 border border-surface-200 hover:border-primary-300 transition-all duration-200 text-surface-700 hover:text-primary-600;
+  }
+  
+  .toolbar-button.active {
+    @apply bg-primary-500 text-white border-primary-500 hover:bg-primary-600;
+  }
+  
+  .asset-item {
+    @apply p-3 rounded-xl bg-white hover:bg-surface-50 border border-surface-200 hover:border-primary-300 transition-all duration-200 cursor-pointer;
+  }
+  
+  .asset-item:hover {
+    @apply transform translate-y-1 shadow-card;
+  }
+  
+  .brand-color-swatch {
+    @apply w-8 h-8 rounded-lg border-2 border-white shadow-sm cursor-pointer hover:scale-110 transition-transform duration-200;
+  }
+  
+  .template-card {
+    @apply bg-white rounded-xl shadow-card hover:shadow-slide transition-all duration-300 cursor-pointer border border-surface-200 hover:border-primary-300 overflow-hidden;
+  }
+  
+  .template-card:hover {
+    @apply transform translate-y-2;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-600 to-secondary-500 bg-clip-text text-transparent;
+  }
+  
+  .glass-effect {
+    @apply bg-white bg-opacity-80 backdrop-blur-lg border border-white border-opacity-20;
+  }
+  
+  .neu-light {
+    @apply shadow-neu-light;
+  }
+  
+  .neu-dark {
+    @apply shadow-neu-dark;
+  }
+  
+  .gradient-mesh {
+    background: radial-gradient(circle at 20% 20%, rgba(79, 70, 229, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 70%, rgba(245, 158, 11, 0.05) 0%, transparent 50%);
+  }
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-surface-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-surface-300 rounded-full hover:bg-surface-400;
+}
+
+/* Responsive text sizing */
+@media (max-width: 640px) {
+  .responsive-text-lg {
+    @apply text-base;
+  }
+  
+  .responsive-text-xl {
+    @apply text-lg;
+  }
+  
+  .responsive-text-2xl {
+    @apply text-xl;
+  }
+  
+  .responsive-text-3xl {
+    @apply text-2xl;
+  }
+}
+
+/* Animation for slide transitions */
+@keyframes slideScale {
+  0% {
+    transform: scale(0.95) translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-enter {
+  animation: slideScale 0.3s ease-out;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  @apply outline-none ring-2 ring-primary-500 ring-offset-2;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
