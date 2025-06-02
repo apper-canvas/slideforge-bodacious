@@ -5,9 +5,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
+extend: {
       colors: {
         primary: {
+          50: '#eef2ff',
+          100: '#e0e7ff',
+          200: '#c7d2fe',
+          300: '#a5b4fc',
+          400: '#818cf8',
+          500: '#4f46e5',
+          600: '#4338ca',
+          700: '#3730a3',
+          800: '#312e81',
+          900: '#1e1b4b',
           DEFAULT: '#4F46E5',
           light: '#818CF8',
           dark: '#3730A3'
@@ -34,6 +44,14 @@ export default {
           forge: '#FF6B35',
           studio: '#2D4A87',
           creative: '#7B68EE'
+        },
+        'muted': {
+          DEFAULT: 'hsl(210 40% 96%)',
+          foreground: 'hsl(215.4 16.3% 46.9%)'
+        },
+        'destructive': {
+          DEFAULT: 'hsl(0 84.2% 60.2%)',
+          foreground: 'hsl(210 40% 98%)'
         }
       },
       fontFamily: {
@@ -75,7 +93,7 @@ export default {
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-10px)' }
-}
+        }
       },
       borderColor: {
         'border': 'hsl(214.3 31.8% 91.4%)',
@@ -108,20 +126,6 @@ export default {
         'muted-foreground': 'hsl(215.4 16.3% 46.9%)',
         'accent-foreground': 'hsl(222.2 84% 4.9%)',
         'destructive-foreground': 'hsl(210 40% 98%)',
-      },
-      colors: {
-        'muted': {
-          DEFAULT: 'hsl(210 40% 96%)',
-          foreground: 'hsl(215.4 16.3% 46.9%)'
-        },
-        'accent': {
-          DEFAULT: 'hsl(210 40% 96%)',
-          foreground: 'hsl(222.2 84% 4.9%)'
-        },
-        'destructive': {
-          DEFAULT: 'hsl(0 84.2% 60.2%)',
-          foreground: 'hsl(210 40% 98%)'
-        }
       }
     }
   },
