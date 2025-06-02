@@ -9,19 +9,54 @@ const MainFeature = ({ darkMode }) => {
   const [toolbarMode, setToolbarMode] = useState('select')
   const [showAssets, setShowAssets] = useState(false)
   const [showBrandPanel, setShowBrandPanel] = useState(false)
-  const [presentation, setPresentation] = useState({
-    title: 'Untitled Presentation',
+const [presentation, setPresentation] = useState({
+    title: "Dreamware's IT Solutions for Novanta",
     slides: [
       {
         id: 1,
-        title: 'Welcome to SlideForge',
+        title: "Dreamware's IT Solutions for Novanta",
         content: [
           {
-            id: 'text-1',
+            id: 'title-main',
             type: 'text',
-            content: 'Professional Presentations Made Simple',
-            position: { x: 50, y: 100, width: 400, height: 60 },
-            style: { fontSize: '28px', fontWeight: 'bold', color: '#1e293b' }
+            content: "Dreamware's IT Solutions for Novanta",
+            position: { x: 100, y: 80, width: 600, height: 60 },
+            style: { fontSize: '32px', fontWeight: 'bold', color: '#1e293b', textAlign: 'center' }
+          },
+          {
+            id: 'subtitle',
+            type: 'text',
+            content: 'Empowering Innovation and Operational Excellence in Medical, Life Science, and Advanced Industrial OEM',
+            position: { x: 50, y: 160, width: 700, height: 80 },
+            style: { fontSize: '18px', fontWeight: '500', color: '#475569', textAlign: 'center', lineHeight: '1.4' }
+          },
+          {
+            id: 'logo-dreamware',
+            type: 'image',
+            content: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=80&fit=crop',
+            position: { x: 150, y: 280, width: 150, height: 80 },
+            style: { borderRadius: '8px', objectFit: 'contain' }
+          },
+          {
+            id: 'logo-novanta',
+            type: 'image',
+            content: 'https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=150&h=80&fit=crop',
+            position: { x: 500, y: 280, width: 150, height: 80 },
+            style: { borderRadius: '8px', objectFit: 'contain' }
+          },
+          {
+            id: 'presenter-info',
+            type: 'text',
+            content: 'Presented by: [Your Name/Dreamwares Team]',
+            position: { x: 100, y: 400, width: 400, height: 30 },
+            style: { fontSize: '16px', fontWeight: '500', color: '#64748b' }
+          },
+          {
+            id: 'date-info',
+            type: 'text',
+            content: 'Date: June 2, 2025',
+            position: { x: 500, y: 400, width: 200, height: 30 },
+            style: { fontSize: '16px', fontWeight: '500', color: '#64748b' }
           }
         ],
         background: '#ffffff'
