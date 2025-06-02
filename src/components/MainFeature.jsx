@@ -60,6 +60,104 @@ const [presentation, setPresentation] = useState({
           }
         ],
         background: '#ffffff'
+      },
+      {
+        id: 2,
+        title: "About Dreamware: Your Strategic Salesforce and AI Partner",
+        content: [
+          {
+            id: 'slide2-title',
+            type: 'text',
+            content: 'About Dreamware: Your Strategic Salesforce and AI Partner',
+            position: { x: 50, y: 40, width: 700, height: 50 },
+            style: { fontSize: '28px', fontWeight: 'bold', color: '#1e293b', textAlign: 'center' }
+          },
+          {
+            id: 'who-we-are-title',
+            type: 'text',
+            content: 'Who We Are:',
+            position: { x: 50, y: 120, width: 300, height: 30 },
+            style: { fontSize: '18px', fontWeight: 'bold', color: '#4F46E5' }
+          },
+          {
+            id: 'who-we-are-1',
+            type: 'text',
+            content: '• An AI-first company with deep roots in Salesforce expertise.',
+            position: { x: 70, y: 150, width: 650, height: 25 },
+            style: { fontSize: '14px', color: '#1e293b', lineHeight: '1.4' }
+          },
+          {
+            id: 'who-we-are-2',
+            type: 'text',
+            content: '• A recognized Salesforce PDO Partner and Consulting Partner (Gold to Platinum).',
+            position: { x: 70, y: 175, width: 650, height: 25 },
+            style: { fontSize: '14px', color: '#1e293b', lineHeight: '1.4' }
+          },
+          {
+            id: 'who-we-are-3',
+            type: 'text',
+            content: '• Over 14 years of experience delivering innovative solutions.',
+            position: { x: 70, y: 200, width: 650, height: 25 },
+            style: { fontSize: '14px', color: '#1e293b', lineHeight: '1.4' }
+          },
+          {
+            id: 'who-we-are-4',
+            type: 'text',
+            content: '• Offices in the US and India, with associates across the globe (US, UK, Australia, Russia, Middle East).',
+            position: { x: 70, y: 225, width: 650, height: 25 },
+            style: { fontSize: '14px', color: '#1e293b', lineHeight: '1.4' }
+          },
+          {
+            id: 'mission-title',
+            type: 'text',
+            content: 'Our Mission:',
+            position: { x: 50, y: 270, width: 300, height: 30 },
+            style: { fontSize: '18px', fontWeight: 'bold', color: '#4F46E5' }
+          },
+          {
+            id: 'mission-1',
+            type: 'text',
+            content: '• To revolutionize how businesses operate and interact with their audience by leveraging cutting-edge cloud technology, digital media, and Artificial Intelligence.',
+            position: { x: 70, y: 300, width: 650, height: 40 },
+            style: { fontSize: '14px', color: '#1e293b', lineHeight: '1.4' }
+          },
+          {
+            id: 'mission-2',
+            type: 'text',
+            content: '• Committed to quality, innovation, and customer satisfaction.',
+            position: { x: 70, y: 340, width: 650, height: 25 },
+            style: { fontSize: '14px', color: '#1e293b', lineHeight: '1.4' }
+          },
+          {
+            id: 'expertise-title',
+            type: 'text',
+            content: 'Our Expertise at a Glance:',
+            position: { x: 50, y: 385, width: 300, height: 30 },
+            style: { fontSize: '18px', fontWeight: 'bold', color: '#4F46E5' }
+          },
+          {
+            id: 'expertise-1',
+            type: 'text',
+            content: '• 540+ Projects in Salesforce Lightning, API Integrations, Data Migration, Customization, and Development.',
+            position: { x: 70, y: 415, width: 650, height: 25 },
+            style: { fontSize: '14px', color: '#1e293b', lineHeight: '1.4' }
+          },
+          {
+            id: 'expertise-2',
+            type: 'text',
+            content: '• 400+ AppExchange Apps developed.',
+            position: { x: 70, y: 440, width: 650, height: 25 },
+            style: { fontSize: '14px', color: '#1e293b', lineHeight: '1.4' }
+          },
+          {
+            id: 'expertise-3',
+            type: 'text',
+            content: '• 100+ Certified Salesforce Developers.',
+            position: { x: 70, y: 465, width: 650, height: 25 },
+            style: { fontSize: '14px', color: '#1e293b', lineHeight: '1.4' }
+          }
+        ],
+        background: '#ffffff'
       }
     ],
     brandSettings: {
